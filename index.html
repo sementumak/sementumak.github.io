@@ -1,9 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>Мой сайт</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме — Тумак Семён</title>
+    <style>
+        body {
+            background-color: #ededf0;
+            color: #333333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .main-container {
+            max-width: 700px;
+            margin: 40px auto; 
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: #222222;
+            margin-bottom: 5px;
+        }
+        
+        h3 {
+            color: #555555;
+            border-bottom: 1px solid #cccccc;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+
+        p, li {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Ура! Мой сайт на GitHub Pages работает!</h1>
+
+    <div class="main-container">
+        
+        <header>
+            <h1>Тумак Семён Сергеевич</h1>
+            <p>Студент НИУ ВШЭ СПб(ПИКИ)</p>
+        </header>
+
+        <main>
+            <section>
+                <h3>Образование и достижения</h3>
+                <p>Окончил МБОУ "ЛИЦЕЙ №35".</p>
+                <p>Студент 1 курса НИУ ВШЭ СПБ(ПИКИ)</p>
+                <p><strong>Результаты ЕГЭ:</strong></p>
+                <ul>
+                    <li>Физика — 98 баллов</li>
+                    <li>Русский язык — 97 баллов</li>
+                    <li>Профильная математика — 96 баллов</li>
+                    <li>Информатика — 90 баллов</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Опыт в программировании</h3>
+                <p><strong>Языки и технологии, которыми пользовался:</strong></p>
+                <ul>
+                    <li>Python, C++, Lua</li>
+                    <li>HTML, CSS</li>
+                </ul>
+                <p><strong>Инструменты разработки:</strong> PyCharm, VS Code.</p>
+            </section>
+
+            <section>
+                <h3>Мои проекты</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.roblox.com/games/138788216023498/unnamed" target="_blank" style="color: #5555bb; font-weight: bold; text-decoration: none;">Игра «Сапёр» в Roblox</a> — разработал самостоятельно в 10 классе в качестве итогового школьного проекта (использовал язык Lua).
+                </ul>
+            </section>
+        </main>
+
+    </div>
+
 </body>
 </html>

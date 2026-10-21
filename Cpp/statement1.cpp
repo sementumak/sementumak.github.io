@@ -70,6 +70,10 @@ bool is_abs_greater(const char* num1, const char* num2)
 
 int main(int argc, char*argv[])
 {
+    if (argc < 2) 
+    {
+        return 1;
+    }
     const char* num1 = argv[1];
     const char* num2 = argv[2];
 

@@ -291,11 +291,20 @@ std::ostream& operator<<(std::ostream& os, const String& str) {
 std::istream& operator>>(std::istream& is, String& str) {
     str.Clear();
     char c;
-    while (is >> c) {
+    while (is.get(c) && (c == ' ' || c == '\n' || c == '\t' || c == '\r' || c == '\v' || c == '\f')) {
+    }
+    if (is) {
         str.PushBack(c);
+        while (is.get(c) && !(c == ' ' || c == '\n' || c == '\t' || c == '\r' || c == '\v' || c == '\f')) {
+            str.PushBack(c);
+        }
+        if (is) {
+            is.unget();
+        }
     }
     return is;
 }
+
 
 
 bool operator==(const String& lhs, const String& rhs) {
